@@ -6,8 +6,8 @@ import (
 )
 
 func main() {
-	a := app.New()
-	w := a.NewWindow("Fyne Demo")
+	a := app.NewWithID("io.fyne.flip-clock")
+	w := a.NewWindow("Flip Clock")
 	ui.SetupMainWindow(w)
 	w.ShowAndRun()
 }
